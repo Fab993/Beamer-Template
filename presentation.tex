@@ -1,0 +1,120 @@
+% First Created: Madrid - 2017
+% Last Modified: Brussels - 2019
+% Fabrizio Leone. fabrizioleone93@gmail.com
+
+\documentclass{beamer}
+
+% Choose theme
+\usetheme{Boadilla} 
+\usecolortheme{rose}
+
+% Call packages
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[official]{eurosym}
+\usepackage{hyperref}
+
+% Personalise Font
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+\usefonttheme{serif}% default family is serif
+\usepackage{mathpazo}
+
+% Personalise layout
+\renewcommand{\baselinestretch}{1.3} 
+\usepackage{default}
+\newcommand{\notimplies}{%
+	\mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+
+% Set Colors
+\renewcommand{\arraystretch}{0.75}
+\definecolor{links}{HTML}{009900}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+\definecolor{orange}{RGB}{204, 85, 0}
+\definecolor{red}{RGB}{174, 31, 35}
+\definecolor{grey}{RGB}{47,79,79}
+\usepackage{xcolor} 
+\definecolor{UniBlue}{RGB}{95,121,190}
+\setbeamercolor{title}{fg=red}
+\setbeamercolor{frametitle}{fg=red}
+\setbeamercolor{structure}{fg=grey}
+\usepackage{scrextend}
+\setbeamercolor{red}{fg=grey,bg=grey}
+\setbeamercolor{footline}{fg=grey, bg=red}
+\usepackage[makeroom]{cancel}
+
+% Modify Footer
+\setbeamertemplate{footline}
+{ 
+	\leavevmode%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=0.00000000001ex,dp=0.0005ex]{red}
+	\end{beamercolorbox}%
+	\vskip0pt
+	\hbox{%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}\insertshortauthor
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{title in head/foot}%
+			\usebeamerfont{title in head/foot}\insertshorttitle
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2ex,dp=1ex,center]{}%
+			\usebeamerfont{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+\makeatother
+
+% Create new commands
+\newcommand{\quotquot}[1]{``#1''}
+
+% Change Format Bullet Points
+\setbeamertemplate{itemize items}[circle]
+
+% Title Info
+\title[My Presentation]{My  Presentation}
+\author[Myself]{{Myself}}
+\institute[My Institute] 
+{\large{\color{black}{My Cool Project}}}
+\setbeamertemplate{navigation symbols}{}
+\vfill
+\date{\today}
+\date{\today}
+
+
+% Uncomment to display the page number in a different fashio: comment the one above and uncomment the one below to get only the page number in the footer.
+
+%\addtobeamertemplate{navigation symbols}{}{%
+%	\usebeamerfont{footline}%
+%	\usebeamercolor[fg]{footline}%
+%	\hspace{0.5em}%
+%	\insertframenumber/\inserttotalframenumber
+%}
+\setbeamercovered{transparent}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Document Starts Here %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+	\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{This Is a Sample Frame}
+	\begin{itemize}\setlength\itemsep{1.5em}
+   \item I can itemize contents
+   \item ...
+   \item ...
+	\end{itemize}
+\vspace{1cm}
+\begin{block}{I can Create a Block}
+	Content of my Block
+\end{block}
+\end{frame}
+
+
+
+
+\end{document}
